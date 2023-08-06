@@ -1,0 +1,225 @@
+.uvod {
+    font-family: Roboto, sans-serif;
+    background-image: url('./GaleryImgs/grayy.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.uvod h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    margin-top: 170px;
+}
+
+.uvod p {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    filter: brightness(100%);
+} 
+
+.container-slider {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    margin-top: 610px;
+    font-family: Roboto, sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
+}
+
+.container-slider h1 {
+    color: black;
+}
+
+@media screen and (max-width: 960px){
+   .container-slider{
+     margin: 100px 10px 0;
+   }
+}
+
+.left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+} 
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in-out 0.4s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.active-anim {
+    opacity: 1;
+}
+
+.btn-slide {
+    width: 60px;
+    height: 60px;
+    border: 50%;
+    background: #f1f1f1;
+    border: 1px solid black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-slide img {
+    width: 25px;
+    height: 25px;
+    pointer-events: none;
+}
+
+.down {
+    /* padding-top: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-60%);
+    cursor: pointer; */
+
+   position: absolute;
+   top: 50%;
+   z-index: 100;
+   width: 50px;
+   height: 60px;
+   background-color: white;
+   border: none;
+   color: black;
+   cursor: pointer;
+   font-size: 16px;
+   transform: translateX(-100%);
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+
+.up{
+    /* padding-top: 15px;
+    border-radius: 50%;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-60%);
+    cursor: pointer; */
+
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    width: 50px;
+    height: 60px;
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.up img {
+    margin-top: 15px;
+}
+
+.down img {
+    margin-top: 15px;
+}
+
+.title {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 1.8em;
+    color: white;
+}
+
+.subtitle{
+    margin-top: 20px;
+}
+
+.katalog {
+    width: 100%;
+    height: 500px;
+    margin-top: 610px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./GaleryImgs/wood.avif');
+    filter: brightness(90%);
+}
+
+.katalog h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 180px;
+    color: rgb(2, 2, 55);
+}
+
+.katalog a {
+    text-decoration: none;
+}
+
+.katalog button {
+    display: flex;
+    background-color: transparent;
+    color: rgb(2, 2, 55);
+    border: 1px solid rgb(2, 2, 55);
+    border-radius: 5px;
+    margin-left: 46%;
+    width: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.katalog button:hover {
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.katalog .fa-solid {
+    margin-left: 5px;
+}
