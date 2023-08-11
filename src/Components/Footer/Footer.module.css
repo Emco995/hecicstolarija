@@ -1,0 +1,124 @@
+.lastSection {
+    background-color: rgb(35, 35, 35);
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+.footer {
+    margin-top: 1300px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Roboto, sans-serif;
+    /* position: absolute; */
+}
+
+.footer div {
+    width: 25%;
+    margin-top: 50px;
+}
+
+.footer div h2 {
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.footer div p {
+    width: 70%;
+    text-align: left;
+}
+
+.logoPart img {
+    margin-top: 0;
+    width: 300px;
+    height: 200px;
+}
+
+.footer hr {
+    color: #fff;
+    height: 1px;
+}
+
+.rights {
+    text-align: center;
+    height: 10px;
+    background-color: rgb(35, 35, 35);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid white;
+}
+
+@media (max-width: 900px) {
+    .lastSection {
+        background-color: rgb(35, 35, 35);
+        margin-top: 2250px;
+        width: 100%;
+        height: 1300px;
+        font-family: Roboto, sans-serif;
+        color: #fff;
+    }
+
+    .footer {
+        margin-top: 20px;
+        padding-top: 500px;
+        width: 100%;
+        height: 200px;
+        background-color: rgb(35, 35, 35);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: Roboto, sans-serif;
+    }
+
+    .footer div {
+        width: 60%;
+        /* margin-left: 30%; */
+    }
+
+    .footer div h2 {
+        margin-left: 16%;
+        /* text-align: left;
+        font-size: 1.4em; */
+    }
+
+    .logoPart{
+        margin-left: 18%;
+        width: 300px;
+        height: 200px;
+    }
+
+    .leftPart{
+        margin-left: 30%;
+    }
+ 
+    .centralPart {
+        margin-left: 30%;
+    }
+
+    .rightPart {
+        margin-left: 15%;
+    }
+
+    .rightPart p {
+        margin-left: 25%;
+    }
+
+    /* .contactFooter hr {
+        margin-top: 800px;
+        color: #fff;
+        height: 1px;
+    } */
+    
+    .rights {
+        margin-top: 550px;
+        text-align: center;
+    }
+    
+}

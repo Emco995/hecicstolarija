@@ -1,0 +1,179 @@
+.wordNamjestaj {
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 20%;
+    text-align: center;
+}
+
+.wordNamjestaj span {
+    display: inline-block;
+    font-family: 'Lugrasimo', cursive;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    transform: translateY(-100vh);
+    animation: fall 3.5s forwards;
+}
+
+
+.wordVasoj {
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    top: 62%;
+    left: 20%;
+    text-align: center;
+}
+
+.wordVasoj span {
+    font-family: 'Lugrasimo', cursive;
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    transform: translateY(+100vh);
+    animation: fall 3.5s forwards;
+}
+
+/* .space {
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+.sentence {
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 20%;
+    text-align: center;
+}
+
+.sentence span {
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    transform: translatex(+100vh);
+    animation: fall 3.5s forwards;
+}
+
+@keyframes fall {
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.wordNamjestaj span:nth-child(2){
+    animation-delay: 0.7s;
+}
+
+.wordNamjestaj span:nth-child(3){
+    animation-delay: 1.4s;
+}
+
+.wordNamjestaj span:nth-child(4){
+    animation-delay: 2.1s;
+}
+
+.wordNamjestaj span:nth-child(5){
+    animation-delay: 2.8s;
+}
+
+.word-namjestaj span:nth-child(6){
+    animation-delay: 3.5s;
+}
+
+.wordNamjestaj span:nth-child(7){
+    animation-delay: 4.2s;
+}
+
+.wordNamjestaj span:nth-child(8){
+    animation-delay: 4.9s;
+}
+
+.wordNamjestaj span:nth-child(9){
+    animation-delay: 5.6s;
+}
+
+.wordNamjestaj span:nth-child(10){
+    animation-delay: 6.3s;
+}
+
+.wordNamjestaj span:nth-child(11){
+    animation-delay: 7.0s;
+}
+
+.wordVasoj span:nth-child(2){
+    animation-delay: 0.7s;
+}
+
+.wordVasoj span:nth-child(3){
+    animation-delay: 1.4s;
+}
+
+.wordVasoj span:nth-child(4){
+    animation-delay: 2.1s;
+}
+
+.wordVasoj span:nth-child(5){
+    animation-delay: 2.8s;
+}
+
+.wordVasoj span:nth-child(6){
+    animation-delay: 3.5s;
+}
+
+.wordVasoj span:nth-child(7){
+    animation-delay: 4.2s;
+}
+
+.wordVasoj span:nth-child(8){
+    animation-delay: 4.9s;
+}
+
+.wordVasoj span:nth-child(9){
+    animation-delay: 5.6s;
+}
+
+.wordVasoj span:nth-child(10){
+    animation-delay: 6.3s;
+}
+
+@media (max-width: 900px){
+    .wordNamjestaj {
+        top: 35%;
+        left: 40%;
+    }
+
+    .wordNamjestaj span {
+        font-family: 'Lugrasimo', cursive;
+        font-size: 1.4em;
+    }
+
+    .wordVasoj {
+        top: 40%;
+        left: 40%;
+    }
+    
+    .wordVasoj span {
+        font-size: 1.4em;
+        font-weight: 700;
+    }
+
+    .sentence {
+        top: 45%;
+        left: 40%;
+    }
+    
+    .sentence span {
+        font-size: 1.0em;
+        font-weight: 400;
+    }
+}

@@ -1,21 +1,14 @@
-import React, {useEffect} from "react";
+import React from "react";
 import ImageSlider from "./Galerija/ImageSlider";
-import Header from "./Header/Header";
-import GaleryFooter from "./Galerija/GaleryFooter";
+import Navbar from "./Header/Navbar/Navbar";
 
 const Galerija = () => {
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-
-    return(
-        <div>
-        <Header></Header>
-        <ImageSlider></ImageSlider>
-        <GaleryFooter></GaleryFooter>
-        </div>
-    )
-}
+  return (
+    <div>
+      <Navbar></Navbar>
+      <ImageSlider></ImageSlider>
+    </div>
+  );
+};
 
 export default Galerija;

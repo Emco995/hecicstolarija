@@ -1,17 +1,12 @@
-import React, {useEffect} from "react";
-import Header from "./Header/Header";
+import React  from "react";
+import Navbar from "./Header/Navbar/Navbar";
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
 
 const Home = () => {
-    
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-
     return (
         <div>
-            <Header></Header>
+            <Navbar></Navbar>
             <Main></Main>
             <Footer></Footer>
         </div>

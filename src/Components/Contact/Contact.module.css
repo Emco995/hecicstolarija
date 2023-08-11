@@ -1,0 +1,300 @@
+.contactContainer {
+    width: 100%;
+    position: absolute;
+}
+
+.map {
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 450px;
+}
+
+.map h1 {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+@media (max-width: 900px){
+    .map {
+        margin-top: 40px;
+    }
+}
+
+.contactInfo {
+    display: flex;
+    width: 100%;
+    margin-top: 750px;
+}
+
+.contactInfoLeft {
+    width: 40%;
+    padding-left: 10%;
+    font-family: Roboto, sans-serif;
+    line-height: 40px;
+}
+
+.contactIcons {
+    font-size: 2.0em;
+}
+
+.contactInfoRight {
+    width: 40%;
+    padding-right: 10%;
+}
+
+.contactForm {
+    cursor: pointer;
+}
+
+.nameNumber input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.emailMessage {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputName {
+    margin-left: 20px; 
+    margin-right: 5px; 
+    font-family: Roboto, sans-serif;
+    font-size: 1.0em;
+    width: 40%;
+    padding: 10px;
+}
+
+.inputNumber {
+    margin-left: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: 1.0em;
+    width: 40%;
+    padding: 10px;
+}
+
+.inputEmail {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 1.0em;
+    width: 86%;
+    padding: 10px;
+}
+
+.inputMessage {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 1.0em;
+    width: 86%;
+    height: 200px;
+    padding: 10px;
+}
+
+.contactFormButton {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 1.1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(35, 34, 34);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactFormButton:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px){
+    .contactInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 750px;
+    }
+
+    .contactInfoLeft {
+        width: 80%;
+    }
+
+    .contactInfoRight {
+        width: 80%;
+    }
+
+    .inputName {
+        margin-left: 50px; 
+        font-family: Roboto, sans-serif;
+        font-size: 1.0em;
+        width: 90%;
+    }
+
+    .inputNumber {
+        margin-left: 50px;
+        font-family: Roboto, sans-serif;
+        font-size: 1.0em;
+        width: 90%;
+    }
+    
+    .inputEmail {
+        margin-left: 50px;
+        font-family: Roboto, sans-serif;
+        font-size: 1.0em;
+        width: 90%;
+        padding: 10px;
+    }
+    
+    .inputMessage {
+        margin-top: 20px;
+        margin-left: 50px;
+        font-family: Roboto, sans-serif;
+        font-size: 1.0em;
+        width: 90%;
+        height: 200px;
+        padding: 10px;
+    }
+
+    .contactFormButton {
+        margin-left: 50px;
+    }
+}
+
+
+.contactLastSection {
+    background-color: rgb(35, 35, 35);
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+.contactFooter {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Roboto, sans-serif;
+    /* position: absolute; */
+}
+
+.contactFooter div {
+    width: 25%;
+    margin-top: 50px;
+}
+
+.contactFooter div h2 {
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.contactFooter div p {
+    width: 70%;
+    text-align: left;
+}
+
+.contactLogoPart img {
+    margin-top: 0;
+    width: 300px;
+    height: 200px;
+}
+
+.contactFooter hr {
+    color: #fff;
+    height: 1px;
+}
+
+.contactRights {
+    height: 10px;
+    background-color: rgb(35, 35, 35);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid white;
+    text-align: center;
+}
+
+
+
+@media (max-width: 900px){
+    .contactLastSection {
+        background-color: rgb(35, 35, 35);
+        margin: 0;
+        width: 100%;
+        height: 1300px;
+        font-family: Roboto, sans-serif;
+        color: #fff;
+    }
+
+    .contactFooter {
+        margin-top: 20px;
+        padding-top: 500px;
+        width: 100%;
+        height: 200px;
+        background-color: rgb(35, 35, 35);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: Roboto, sans-serif;
+    }
+
+    .contactFooter div {
+        width: 60%;
+        /* margin-left: 30%; */
+    }
+
+    .contactFooter div h2 {
+        margin-left: 16%;
+        /* text-align: left;
+        font-size: 1.4em; */
+    }
+
+    .contactLogoPart{
+        margin-left: 18%;
+        width: 300px;
+        height: 200px;
+    }
+
+    .contactLeftPart{
+        margin-left: 30%;
+    }
+ 
+    .contactCentralPart {
+        margin-left: 30%;
+    }
+
+    .contactRightPart {
+        margin-left: 15%;
+    }
+
+    .contactRightPart p {
+        margin-left: 25%;
+    }
+
+    .contactFooter hr {
+        margin-top: 800px;
+        color: #fff;
+        height: 1px;
+    }
+    
+    .contactRights {
+        margin-top: 550px;
+        text-align: center;
+    }
+}

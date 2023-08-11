@@ -1,0 +1,301 @@
+.central {
+    width: 100%;
+    position: absolute;
+}
+
+.centralBackground {
+    margin-top: 96px;
+    width: 100%;
+    height: 500px;
+    background-image: url('./AboutImgs/aaa.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.centralBackground h1 {
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    font-family: Roboto, sans-serif;
+    font-size: 2.8em;
+}
+
+@media (max-width: 900px) {
+    .centralBackground {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+.centralMain {
+    display: flex;
+    width: 100%;
+}
+
+.centralMainLeft {
+    width: 50%;
+}
+
+.centralMainLeft h1{
+    padding-top: 60px;
+    padding-left: 200px;
+    font-size: 2.8em;
+    font-family: Roboto, sans-serif;
+}
+
+.centralMainLeft p {
+    padding-left: 200px;
+    width: 60%;
+    color: gray;
+    font-family: Roboto, sans-serif;
+    line-height: 30px;
+}
+
+.centralMainRight {
+    width: 60%;
+}
+
+.centralMainRight img {
+    width: 550px;
+    height: 400px;
+    padding-left: 160px;
+}
+
+
+@media (max-width: 900px) {
+    .centralMain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .centralMainLeft {
+        width: 100%;
+    }
+
+    .centralMainLeft h1{
+        padding-left: 100px;
+    }
+
+    .centralMainLeft p{
+        padding-left: 100px;
+    }
+
+    .centralMainRight {
+        width: 100%;
+    }
+
+    .centralMainRight img {
+        width: 300px;
+        height: 200px;
+        padding-left: 100px;
+    }
+}
+
+
+.mainBottomCentral {
+    width: 100%;
+    height: 500px;
+    background-image: url('./AboutImgs/ccc.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Roboto, sans-serif;
+}
+
+.mainBottomCentral h1{
+    text-align: center;
+    color: white;
+    padding-top: 150px;
+    font-size: 2.8em;
+}
+
+.mainBottomCentral p{
+    text-align: center;
+    color: white;
+    width: 60%;
+    line-height: 30px;
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+@media (max-width: 900px) {
+    .mainBottomCentral {
+        width: 100%;
+        height: 900px;
+    }
+}
+
+
+.centralHelper {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(226, 226, 226);
+    font-family: Roboto, sans-serif;
+    padding-top: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.centralHelper div{
+    width: 25%;
+    margin: 20px;
+}
+
+.centralHelper div h3{
+    font-size: 1.5em;
+ }
+
+.centralHelper div h3 i{
+   font-size: 2.3em;
+}
+
+
+@media (max-width: 900px) {
+    .centralHelper {
+        width: 100%;
+        height: 1500px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centralHelper div{
+        width: 30%;
+        margin-left: 35%;
+        margin-right: 35%;
+        text-align: center;
+    }
+}
+
+
+.centralFooterContainer {
+    background-color: rgb(35, 35, 35);
+    margin: 0;
+    width: 100%;
+    height: 450px;
+    font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+/* .last-section hr {
+    color: #000;
+} */
+
+.centralFooter {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Roboto, sans-serif;
+    /* position: absolute; */
+}
+
+.centralFooter div {
+    width: 25%;
+    margin-top: 50px;
+}
+
+.centralFooter div h2 {
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.centralFooter div p {
+    width: 70%;
+    text-align: left;
+}
+
+.centralLogoPart img {
+    margin-top: 0;
+    width: 300px;
+    height: 200px;
+}
+
+.centralFooter hr {
+    color: #fff;
+    height: 1px;
+}
+
+.centralRights {
+    height: 10px;
+    background-color: rgb(35, 35, 35);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid white;
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    .centralFooterContainer {
+        background-color: rgb(35, 35, 35);
+        margin: 0;
+        width: 100%;
+        height: 1300px;
+        font-family: Roboto, sans-serif;
+        color: #fff;
+    }
+
+    .centralFooter {
+        margin-top: 20px;
+        padding-top: 500px;
+        width: 100%;
+        height: 200px;
+        background-color: rgb(35, 35, 35);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: Roboto, sans-serif;
+    }
+
+    .centralFooter div {
+        width: 60%;
+        /* margin-left: 30%; */
+    }
+
+    .centralFooter div h2 {
+        margin-left: 16%;
+        /* text-align: left;
+        font-size: 1.4em; */
+    }
+
+    .centralLogoPart{
+        margin-left: 18%;
+        width: 300px;
+        height: 200px;
+    }
+
+    .centralLeftPart{
+        margin-left: 30%;
+    }
+ 
+    .centralMidPart {
+        margin-left: 30%;
+    }
+
+    .centralRightPart {
+        margin-left: 15%;
+    }
+
+    .centralRightPart p {
+        margin-left: 25%;
+    }
+
+    .centralFooter hr {
+        margin-top: 800px;
+        color: #fff;
+        height: 1px;
+    }
+    
+    .centralRights {
+        margin-top: 550px;
+        text-align: center;
+    }
+}

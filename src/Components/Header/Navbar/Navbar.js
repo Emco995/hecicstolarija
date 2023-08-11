@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import './Navbar.css';
+import styles from './Navbar.module.css';
 import { Link } from "react-router-dom";
 
 
@@ -12,20 +12,9 @@ const Navbar = () => {
         setActive(!active);
     }
 
-   
-
-    //   useEffect(() => {
-    //     const changeNavBackground = () => {
-    //         if(window.scrollY >= 80 ){
-    //          setNavbar(true);
-    //         } else {
-    //          setNavbar(false);
-    //         }
-    //      }
-    //      window.addEventListener('scroll', changeNavBackground);
-    // })
-
-    // const [navbar, setNavbar] = useState(false);
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     useEffect(() => {
         const changeNavBackground = () => {
@@ -39,26 +28,15 @@ const Navbar = () => {
     })
 
     return(
-        // <div className={navbar ? 'navbar active' : 'navbar'}>
-        //     <img src='./logo.png' alt="" className='logo'></img>
-        //     <ul>
-        //         <li><a href="/">Početna</a></li>
-        //         <li><a href="#">Galerija</a></li>
-        //         <li><a href="#">O nama</a></li>
-        //         <li><a href="#">Kontakt</a></li>
-        //     </ul>
-        // </div>
-
-
-        <div className="header">
-        <div className="menu-icon">
+        <div className={styles.header}>
+        <div className={styles.menuIcon}>
            <i onClick={showMenu} className="fa-solid fa-bars"></i>
         </div>
        
-        <div className={(active ? 'navbar active' : 'navbar')}> 
-        <img src='./logo.png' alt="" className='logo'></img>
+        <div className={(active ? `${styles.navbar} ${styles.active}` : `${styles.navbar}`)}> 
+        <img src='./logo.png' alt="" className={styles.logo}></img>
             <ul>
-                 <div className="closed"><i onClick={showMenu} className="fa-solid fa-xmark"></i></div>
+                 <div className={styles.closed}><i onClick={showMenu} className="fa-solid fa-xmark"></i></div>
                  <li><Link to="/">Početna</Link></li>
                  <li><Link to="/galerija">Galerija</Link></li>
                  <li><Link to="/about">O nama</Link></li>

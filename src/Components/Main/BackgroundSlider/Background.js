@@ -9,12 +9,11 @@ import img7 from "./BackgroundImages/img7.jpg";
 import img8 from "./BackgroundImages/img8.jpg";
 import img9 from "./BackgroundImages/img9.jpg";
 import img10 from "./BackgroundImages/img10.jpg";
-import "./Background.css";
+import styles from "./Background.module.css";
 
 const Background = () => {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
   const [currentSlide, setCurrentSlide] = useState(0);
-  // useRef does not cause a re-render
   let sliderInterval = useRef();
 
   let switchImages = () => {
@@ -28,20 +27,20 @@ const Background = () => {
   useEffect(() => {
     sliderInterval = setInterval(() => {
       switchImages();
-    }, 4000);
+    }, 3000);
     return () => {
       clearInterval(sliderInterval);
     };
-  },);
+  }, [switchImages]);
 
   return (
-    <div className="imgWrapper">
+    <div className={styles.imgWrapper}>
       {images.map((img, index) => {
         return (
           <img
             src={img}
             className={
-                index === currentSlide ? "imageActive homeImg" : "image"
+                index === currentSlide ? `${styles.imageActive} ${styles.homeImg}` : `${styles.image}`
             }
           />
         );

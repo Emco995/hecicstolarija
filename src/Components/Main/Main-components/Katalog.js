@@ -1,10 +1,10 @@
 import React from "react";
-import './Katalog.css';
+import styles from './Katalog.module.css';
 import catalog from './Components Assets/katalog.pdf';
 
 const Katalog = () => {
     return(
-        <div className="catalog">
+        <div className={styles.catalog}>
             <h2>Preuzmi Katalog</h2>
             <a href={catalog}
              download="Example-PDF-document"
