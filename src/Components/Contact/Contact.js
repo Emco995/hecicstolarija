@@ -70,7 +70,7 @@ const Contact = () => {
                 <p>Kupovinu u našem salonu možete obaviti gotovinski, čime ostvarujete popust od 10% (OSIM NA ARTIKLE KOJI SU VEĆ NA AKCIJI), ili pomoću kreditnih kartica do 12 mjeseci (bez popusta)!!</p>
             </div>
             <div className={styles.contactRightPart}>
-                <h2>Kontakt i radno vrijeme</h2>
+                <h2 className={styles.workTime}>Kontakt i radno vrijeme</h2>
                 <p>
                        Ponedjeljak-Petak: 7:00-15:00
                        <br></br>

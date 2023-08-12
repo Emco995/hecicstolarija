@@ -74,11 +74,13 @@
     }
 
     .centralMainLeft h1{
-        padding-left: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .centralMainLeft p{
-        padding-left: 100px;
+        padding-left: 85px;
+        padding-right: 85px;
     }
 
     .centralMainRight {
@@ -88,7 +90,8 @@
     .centralMainRight img {
         width: 300px;
         height: 200px;
-        padding-left: 100px;
+        padding-left: 60px;
+        padding-right: 100px;
     }
 }
 
@@ -157,7 +160,7 @@
 @media (max-width: 900px) {
     .centralHelper {
         width: 100%;
-        height: 1500px;
+        height: 1650px;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
@@ -257,17 +260,10 @@
 
     .centralFooter div {
         width: 60%;
-        /* margin-left: 30%; */
-    }
-
-    .centralFooter div h2 {
-        margin-left: 16%;
-        /* text-align: left;
-        font-size: 1.4em; */
     }
 
     .centralLogoPart{
-        margin-left: 18%;
+        margin-left: 12%;
         width: 300px;
         height: 200px;
     }
@@ -275,13 +271,25 @@
     .centralLeftPart{
         margin-left: 30%;
     }
+
+    .centralLeftPart h2{
+        margin-left: 12%;
+    }
  
     .centralMidPart {
         margin-left: 30%;
     }
 
+    .centralMidPart h2{
+        margin-left: 12%;
+    }
+
     .centralRightPart {
         margin-left: 15%;
+    }
+
+    .centralRightPart h2 {
+        margin-left: 26%;
     }
 
     .centralRightPart p {

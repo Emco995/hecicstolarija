@@ -57,7 +57,7 @@
 @media (max-width: 900px) {
     .lastSection {
         background-color: rgb(35, 35, 35);
-        margin-top: 2250px;
+        margin-top: 2450px;
         width: 100%;
         height: 1300px;
         font-family: Roboto, sans-serif;
@@ -79,17 +79,10 @@
 
     .footer div {
         width: 60%;
-        /* margin-left: 30%; */
-    }
-
-    .footer div h2 {
-        margin-left: 16%;
-        /* text-align: left;
-        font-size: 1.4em; */
     }
 
     .logoPart{
-        margin-left: 18%;
+        margin-left: 12%;
         width: 300px;
         height: 200px;
     }
@@ -97,28 +90,33 @@
     .leftPart{
         margin-left: 30%;
     }
+
+    .leftPart h2{
+        margin-left: 12%;
+    }
  
     .centralPart {
         margin-left: 30%;
+    }
+
+    .centralPart h2{
+        margin-left: 12%;
     }
 
     .rightPart {
         margin-left: 15%;
     }
 
+    .rightPart h2 {
+        margin-left: 26%;
+    }
+
     .rightPart p {
         margin-left: 25%;
     }
-
-    /* .contactFooter hr {
-        margin-top: 800px;
-        color: #fff;
-        height: 1px;
-    } */
     
     .rights {
         margin-top: 550px;
         text-align: center;
     }
-    
 }

@@ -16,6 +16,12 @@
 }
 
 @media (max-width: 900px){
+    .map h1{
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+
     .map {
         margin-top: 40px;
     }
@@ -137,12 +143,14 @@
 
     .inputName {
         margin-left: 50px; 
+        margin-bottom: 0;
         font-family: Roboto, sans-serif;
         font-size: 1.0em;
         width: 90%;
     }
 
     .inputNumber {
+        margin-top: 0;
         margin-left: 50px;
         font-family: Roboto, sans-serif;
         font-size: 1.0em;
@@ -256,17 +264,10 @@
 
     .contactFooter div {
         width: 60%;
-        /* margin-left: 30%; */
-    }
-
-    .contactFooter div h2 {
-        margin-left: 16%;
-        /* text-align: left;
-        font-size: 1.4em; */
     }
 
     .contactLogoPart{
-        margin-left: 18%;
+        margin-left: 12%;
         width: 300px;
         height: 200px;
     }
@@ -274,14 +275,31 @@
     .contactLeftPart{
         margin-left: 30%;
     }
+
+    .contactLeftPart h2{
+        margin-left: 12%;
+    }
  
     .contactCentralPart {
         margin-left: 30%;
     }
 
+    .contactCentralPart h2{
+        margin-left: 12%;
+    }
+
     .contactRightPart {
         margin-left: 15%;
     }
+
+    .contactRightPart h2 {
+        margin-left: 26%;
+    }
+
+
+    /* .workTime {
+        margin-left: 30%;
+    } */
 
     .contactRightPart p {
         margin-left: 25%;

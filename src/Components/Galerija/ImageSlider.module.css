@@ -85,6 +85,7 @@
     .containerSliderTop{
       margin-top: 690px;
       z-index: 999999;
+      height: 520px;
     }
 
     .leftSlideTop h2 {
@@ -321,7 +322,7 @@
     }
 
     .katalog button {
-        margin-left: 40%;
+        margin-left: 36%;
     }
 }
 
@@ -416,7 +417,7 @@
     }
 
     .galLogoPart{
-        margin-left: 18%;
+        margin-left: 14%;
         width: 300px;
         height: 200px;
     }
